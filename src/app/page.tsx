@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 
-const PDF = dynamic(() => import("@/features/pdf").then((mod) => mod.PDF), {
+const PDF = dynamic(() => import("@/features/pdf").then((mod) => mod), {
   ssr: false,
 });
 
