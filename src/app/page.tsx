@@ -1,4 +1,6 @@
-import PDF from "@/features/pdf";
+import dynamic from "next/dynamic";
+
+const PDF = dynamic(() => import("@/features/pdf"), { ssr: false });
 
 export default function Home() {
   return (
