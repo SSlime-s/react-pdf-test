@@ -1,6 +1,8 @@
 import dynamic from "next/dynamic";
 
-const PDF = dynamic(() => import("@/features/pdf"), { ssr: false });
+const PDF = dynamic(() => import("@/features/pdf").then((mod) => mod.PDF), {
+  ssr: false,
+});
 
 export default function Home() {
   return (

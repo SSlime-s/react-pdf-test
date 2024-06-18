@@ -3,7 +3,7 @@
 import { PDFViewer } from "@react-pdf/renderer";
 import { MyDocument } from "./tmp";
 
-export default function PDF() {
+export function PDF() {
   return (
     <PDFViewer>
       <MyDocument />
