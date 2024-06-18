@@ -57,7 +57,7 @@ export default function Sample() {
           <Document
             file={file}
             onLoadSuccess={onDocumentLoadSuccess}
-            options={options}
+            // options={options}
           >
             {Array.from(new Array(numPages), (el, index) => (
               <Page
